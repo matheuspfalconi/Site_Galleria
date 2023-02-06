@@ -1,0 +1,128 @@
+@use 'variables'
+@use 'mixins'
+
+*
+	font-family: 'Josefin Sans'
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+
+body
+	background-color: variables.$bg-color
+	color: variables.$text-color
+
+	a
+		color: variables.$text-color
+		text-decoration: none
+		transition: .4s
+
+	ul
+		list-style: none
+
+.header 
+	display: flex
+	justify-content: space-between
+	@include mixins.container
+
+	&-brand
+		color: variables.$primary-color
+		font-size: 3rem
+
+	&-navbar
+
+		ul
+			height: 100%
+			@include mixins.flex-center
+
+			li
+				margin: 0 1rem
+				text-transform: uppercase
+				font-size: .8rem
+
+				.active
+					color: variables.$secondary-color
+
+				a
+					&:hover
+						color: variables.$secondary-color
+
+	&-social-media
+
+		ul
+			height: 100%
+			@include mixins.flex-center
+
+			li
+				margin: 0 1rem
+
+				a
+
+					&:hover
+						color: variables.$primary-color
+
+.gallery
+	@include mixins.flex-center
+	@include mixins.container
+	flex-wrap: wrap
+	justify-content: space-between
+	padding: 0
+
+	&-card
+		width: 31%
+		height: 400px
+		margin-bottom: 4%
+		@include mixins.flex-center
+		flex-direction: column
+		color: variables.$primary-color
+
+		&-title
+			font-size: 2rem
+			font-weight: 300
+			margin-bottom: 1rem
+
+		&-btn
+			padding: .6rem 2rem
+			border: 2px solid variables.$primary-color
+			color: variables.$primary-color
+			font-weight: 400
+			text-transform: uppercase
+			letter-spacing: 1px
+
+			&:hover
+				background-color: variables.$primary-color
+				color: variables.$bg-color
+
+	#card-1
+		@include mixins.bg-img('https://img.freepik.com/free-photo/portrait-lovely-dog-eating-bone_23-2148366841.jpg?w=740&t=st=1675647792~exp=1675648392~hmac=bf1bb0c9b77ae3e299cb027873c09d1af882ed04eabb2e29aed74691b307fd80')
+
+	#card-2
+		@include mixins.bg-img('https://img.freepik.com/free-photo/modern-business-building-scenery-touching-sky_181624-5785.jpg?w=740&t=st=1675647974~exp=1675648574~hmac=dc463e6a0aa8045169b460639712cee704f0f10d97b3a724b26430a90cb586fd')
+
+	#card-3
+		@include mixins.bg-img('https://img.freepik.com/free-photo/twilight-view-mumbai-cityscape-purple-hues-showing-lot-construction-residential-commercial-skyscrapers-highrises_469504-17.jpg?w=740&t=st=1675648010~exp=1675648610~hmac=49e24b7bf3d00e32c98777fd52b47e04f94b32c3d98d4cbb79e64ce6bce11797')
+
+	#card-4
+		@include mixins.bg-img('https://img.freepik.com/free-photo/beautiful-plants-interior-design_23-2149155795.jpg?w=360&t=st=1675648049~exp=1675648649~hmac=14fc6e35df48a41f15caa6167c1812c988fa19ea6746ae27abed23d5ee9609a5')
+
+	#card-5
+		@include mixins.bg-img('https://img.freepik.com/free-photo/high-angle-woman-running-track_23-2149722063.jpg?w=360&t=st=1675648097~exp=1675648697~hmac=dd96b5fad8a2120b2bf7837a4f1cc6ab87f1aab5ed1d9a3250e9c4c73c6d7a87')
+
+	#card-6
+		@include mixins.bg-img('https://img.freepik.com/free-photo/3d-green-palm-leaves-assortment_23-2149015450.jpg?t=st=1675648159~exp=1675648759~hmac=b88b5b1fc0f5b1b263fbe4678297615dc1c7f008374aec06b391300b547236db')
+
+	#card-7
+		@include mixins.bg-img('https://img.freepik.com/free-photo/nature-journey-travel-trekking-summertime-concept-vertical-shot-pathway-park-leading-forested-area-outdoor-view-wooden-boardwalk-along-tall-pine-trees-morning-forest_343059-3064.jpg?w=360&t=st=1675648417~exp=1675649017~hmac=de0dc9dcb162619719607e8815bf2cfe24f5897b36a0e52ba06c5f9d441fdce4')
+
+	#card-8
+		@include mixins.bg-img('https://img.freepik.com/free-photo/pretty-afro-american-woman-terrace-roof-party-afro-american-long-haired-female-casual-clothes-people-different-nationalities-standing-background-teambuilding-party-concept_74855-21354.jpg?w=360&t=st=1675648458~exp=1675649058~hmac=1349c3e89b493f14625a88227499acfcc4aec0d7fd51618868e48e588bdb6a17')
+
+	#card-9
+		@include mixins.bg-img('https://img.freepik.com/free-photo/high-angle-delicious-food-assortment_23-2149178166.jpg?w=360&t=st=1675648502~exp=1675649102~hmac=42d7c28a4766d55dc0bb72bab4971298aa2e185b3536f01acf4e733e70fd0fa5')
+
+footer
+	text-align: center
+	padding-bottom: 2rem
+
+	span
+		font-weight: bold
+		color: variables.$secondary-color

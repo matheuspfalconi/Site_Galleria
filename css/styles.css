@@ -1,0 +1,227 @@
+* {
+  font-family: "Josefin Sans";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #777;
+}
+body a {
+  color: #777;
+  text-decoration: none;
+  transition: 0.4s;
+}
+body ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+.header-brand {
+  color: #FFF;
+  font-size: 3rem;
+}
+.header-navbar ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-navbar ul li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.header-navbar ul li .active {
+  color: #20C997;
+}
+.header-navbar ul li a:hover {
+  color: #20C997;
+}
+.header-social-media ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-social-media ul li {
+  margin: 0 1rem;
+}
+.header-social-media ul li a:hover {
+  color: #FFF;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+.gallery-card {
+  width: 31%;
+  height: 400px;
+  margin-bottom: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #FFF;
+}
+.gallery-card-title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.gallery-card-btn {
+  padding: 0.6rem 2rem;
+  border: 2px solid #FFF;
+  color: #FFF;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.gallery-card-btn:hover {
+  background-color: #FFF;
+  color: #000;
+}
+.gallery #card-1 {
+  background-image: url("https://img.freepik.com/free-photo/portrait-lovely-dog-eating-bone_23-2148366841.jpg?w=740&t=st=1675647792~exp=1675648392~hmac=bf1bb0c9b77ae3e299cb027873c09d1af882ed04eabb2e29aed74691b307fd80");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-1:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/free-photo/portrait-lovely-dog-eating-bone_23-2148366841.jpg?w=740&t=st=1675647792~exp=1675648392~hmac=bf1bb0c9b77ae3e299cb027873c09d1af882ed04eabb2e29aed74691b307fd80");
+}
+.gallery #card-2 {
+  background-image: url("https://img.freepik.com/free-photo/modern-business-building-scenery-touching-sky_181624-5785.jpg?w=740&t=st=1675647974~exp=1675648574~hmac=dc463e6a0aa8045169b460639712cee704f0f10d97b3a724b26430a90cb586fd");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-2:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/free-photo/modern-business-building-scenery-touching-sky_181624-5785.jpg?w=740&t=st=1675647974~exp=1675648574~hmac=dc463e6a0aa8045169b460639712cee704f0f10d97b3a724b26430a90cb586fd");
+}
+.gallery #card-3 {
+  background-image: url("https://img.freepik.com/free-photo/twilight-view-mumbai-cityscape-purple-hues-showing-lot-construction-residential-commercial-skyscrapers-highrises_469504-17.jpg?w=740&t=st=1675648010~exp=1675648610~hmac=49e24b7bf3d00e32c98777fd52b47e04f94b32c3d98d4cbb79e64ce6bce11797");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-3:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/free-photo/twilight-view-mumbai-cityscape-purple-hues-showing-lot-construction-residential-commercial-skyscrapers-highrises_469504-17.jpg?w=740&t=st=1675648010~exp=1675648610~hmac=49e24b7bf3d00e32c98777fd52b47e04f94b32c3d98d4cbb79e64ce6bce11797");
+}
+.gallery #card-4 {
+  background-image: url("https://img.freepik.com/free-photo/beautiful-plants-interior-design_23-2149155795.jpg?w=360&t=st=1675648049~exp=1675648649~hmac=14fc6e35df48a41f15caa6167c1812c988fa19ea6746ae27abed23d5ee9609a5");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-4:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/free-photo/beautiful-plants-interior-design_23-2149155795.jpg?w=360&t=st=1675648049~exp=1675648649~hmac=14fc6e35df48a41f15caa6167c1812c988fa19ea6746ae27abed23d5ee9609a5");
+}
+.gallery #card-5 {
+  background-image: url("https://img.freepik.com/free-photo/high-angle-woman-running-track_23-2149722063.jpg?w=360&t=st=1675648097~exp=1675648697~hmac=dd96b5fad8a2120b2bf7837a4f1cc6ab87f1aab5ed1d9a3250e9c4c73c6d7a87");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-5:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/free-photo/high-angle-woman-running-track_23-2149722063.jpg?w=360&t=st=1675648097~exp=1675648697~hmac=dd96b5fad8a2120b2bf7837a4f1cc6ab87f1aab5ed1d9a3250e9c4c73c6d7a87");
+}
+.gallery #card-6 {
+  background-image: url("https://img.freepik.com/free-photo/3d-green-palm-leaves-assortment_23-2149015450.jpg?t=st=1675648159~exp=1675648759~hmac=b88b5b1fc0f5b1b263fbe4678297615dc1c7f008374aec06b391300b547236db");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-6:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/free-photo/3d-green-palm-leaves-assortment_23-2149015450.jpg?t=st=1675648159~exp=1675648759~hmac=b88b5b1fc0f5b1b263fbe4678297615dc1c7f008374aec06b391300b547236db");
+}
+.gallery #card-7 {
+  background-image: url("https://img.freepik.com/free-photo/nature-journey-travel-trekking-summertime-concept-vertical-shot-pathway-park-leading-forested-area-outdoor-view-wooden-boardwalk-along-tall-pine-trees-morning-forest_343059-3064.jpg?w=360&t=st=1675648417~exp=1675649017~hmac=de0dc9dcb162619719607e8815bf2cfe24f5897b36a0e52ba06c5f9d441fdce4");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-7:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/free-photo/nature-journey-travel-trekking-summertime-concept-vertical-shot-pathway-park-leading-forested-area-outdoor-view-wooden-boardwalk-along-tall-pine-trees-morning-forest_343059-3064.jpg?w=360&t=st=1675648417~exp=1675649017~hmac=de0dc9dcb162619719607e8815bf2cfe24f5897b36a0e52ba06c5f9d441fdce4");
+}
+.gallery #card-8 {
+  background-image: url("https://img.freepik.com/free-photo/pretty-afro-american-woman-terrace-roof-party-afro-american-long-haired-female-casual-clothes-people-different-nationalities-standing-background-teambuilding-party-concept_74855-21354.jpg?w=360&t=st=1675648458~exp=1675649058~hmac=1349c3e89b493f14625a88227499acfcc4aec0d7fd51618868e48e588bdb6a17");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-8:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/free-photo/pretty-afro-american-woman-terrace-roof-party-afro-american-long-haired-female-casual-clothes-people-different-nationalities-standing-background-teambuilding-party-concept_74855-21354.jpg?w=360&t=st=1675648458~exp=1675649058~hmac=1349c3e89b493f14625a88227499acfcc4aec0d7fd51618868e48e588bdb6a17");
+}
+.gallery #card-9 {
+  background-image: url("https://img.freepik.com/free-photo/high-angle-delicious-food-assortment_23-2149178166.jpg?w=360&t=st=1675648502~exp=1675649102~hmac=42d7c28a4766d55dc0bb72bab4971298aa2e185b3536f01acf4e733e70fd0fa5");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-9:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/free-photo/high-angle-delicious-food-assortment_23-2149178166.jpg?w=360&t=st=1675648502~exp=1675649102~hmac=42d7c28a4766d55dc0bb72bab4971298aa2e185b3536f01acf4e733e70fd0fa5");
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+footer span {
+  font-weight: bold;
+  color: #20C997;
+}
+
+/*# sourceMappingURL=styles.css.map */
